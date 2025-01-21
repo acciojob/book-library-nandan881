@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library</title>
+  <style>
+    /* Body Styling */
+    body {
+      background-color: #f8f8f8; /* Background color for the entire page */
+      font-family: Arial, sans-serif; /* Font for text */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Book Library Container */
+    .book-library {
+      background-color: #ffffff; /* White background for the library container */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Book Block */
+    .book {
+      background-color: #ffffff;
+      margin: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .book img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .book h3 {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .book p {
+      color: #777777; /* Author color */
+      margin: 5px 0;
+    }
+
+    .price-block {
+      color: #2ecc71; /* Price color */
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Book Library Container -->
+  <div class="book-library">
+    <!-- Book Block 1 -->
+    <div class="book">
+      <img src="https://via.placeholder.com/150x200?text=Spy+in+the+Amber" alt="Spy in the Amber">
+      <h3>Spy in the Amber</h3>
+      <p>By Author Name</p>
+      <div class="price-block">$15.99</div>
+    </div>
 
+    <!-- Book Block 2 -->
+    <div class="book">
+      <img src="https://via.placeholder.com/150x200?text=Sacred+Games" alt="Sacred Games">
+      <h3>Sacred Games</h3>
+      <p>By Author Name</p>
+      <div class="price-block">$12.99</div>
+    </div>
+
+    <!-- Book Block 3 -->
+    <div class="book">
+      <img src="https://via.placeholder.com/150x200?text=Byomkesh+Bakshi" alt="Byomkesh Bakshi">
+      <h3>Byomkesh Bakshi</h3>
+      <p>By Author Name</p>
+      <div class="price-block">$10.99</div>
+    </div>
+  </div>
 </body>
-
 </html>
